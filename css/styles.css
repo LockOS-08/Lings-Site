@@ -247,6 +247,58 @@ hr {
     margin: 24px auto;
 }
 
+/* Projects Description Thingy */
+
+.desc-section:not(:nth-child(2)) {
+ padding-top: 1rem;
+}
+
+.desc-section > input[type=checkbox] {
+    display: none;
+}
+
+.desc-section > input[type=checkbox]:not(:checked) ~ .desc-topic:before {
+    content: "▲ ";
+}
+
+.desc-section > input[type=checkbox]:not(:checked) ~ .desc-answer {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0.15rem;
+    margin-left: 2rem;
+    transition: max-height 1s ease 0s;
+}
+
+.desc-section > input[type=checkbox]:checked ~ .desc-topic:before {
+    content: "▼ ";
+}
+
+.desc-section > input[type=checkbox]:checked ~ .desc-answer {
+    max-height: 1000px;
+    overflow: hidden;
+    margin-top: 0.15rem;
+    margin-left: 2rem;
+    transition: max-height 1s ease 0s;
+}
+
+.desc-section > .desc-topic {
+    user-select: none;
+    cursor: pointer;
+}
+
+.desc-section > .desc-topic:before {
+    min-width: 1.5rem;
+    max-width: 1.5rem;
+}
+
+.desc-answer {
+    color: #fff;
+}
+
+.desc-topic {
+    color: #fff;
+}
+
 @media (max-width: 900px) {
     aside {
         position: static;
