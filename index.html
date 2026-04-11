@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Lings Web Development Team" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lings Web Developers" />
+    <meta name=viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Lings — Open Source Teenage Developer Collective</title>
-    <meta
+    <title>Lings - Open Source Teenage Developer Collective</title>
+    <meta 
         name="description"
-        content="Lings is a collective of teenage programmers building operating systems, websites, tools, and experimental software."
+        content="Lings is a collective of teenage programmers building our own Linux distribution, websites, tools, and experimental software."
     />
     <meta
-        name="keywords"
-        content="Lings, teenage programmers, teen developers, Linux, OSDev, web development, programming, open source, software projects"
+      name="keywords"
+      content="Lings, Lings Linux, SfymmiK, kemf, taterr, scryv"
     />
 
     <meta property="og:title" content="Lings — Open Source Teenage Developer Collective" />
@@ -25,132 +25,189 @@
 
     <link rel="icon" href="https://git.sfymmik.xyz/Lings/logos_and_banners/raw/branch/main/logowithnothing.svg" />
     <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-    <div class="background" aria-hidden="true">
-        <div class="grid"></div>
+  </head>
+  <body>
+    <!-- stuff for the background -->
+    <div class="page-bg" aria-hidden="true">
+      <div class="noise"></div>
+      <div class="grid"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="radial radial-top"></div>
     </div>
-
+    <!-- header of this site -->
+    <!-- i know the hyperlinks look like shit down there but dont judge please -->
     <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="#hero">
-                <img src="images/logo.svg" alt="Lings logo" />
-                <div class="brand-text">
-                    <span class="brand-title">Lings</span>
-                    <span class="brand-subtitle">Open source teenage developer collective</span>
-                </div>
-            </a>
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Lings 'home'">
+          <img src="images/logo.svg" alt="Lings Logo" />
+          <div class="brand-text">
+            <span class="brand-title">Lings</span>
+            <span class="brand-subtitles">Open source teenage developer collective</span>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Main Navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contributors">Team</a>
+          <a href="#join">Join</a>
+          <a href="#credits">Credits</a>
+        </nav>
 
-            <nav class="nav" aria-label="Main navigation">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contributors">Contributors</a>
-                <a href="#join">Contributing</a>
-                <a href="#credits">Credits</a>
-            </nav>
+        <div class="header-addons">
+          <a
+              class="header-button header-button-muted"
+              href="https://discord.gg/p7nE5jWPFd"
+              target="_blank"
+              rel="noreferrer"
+          >Discord</a>
 
-            <div class="header-actions">
-                <a
-                    class="header-button header-button-muted"
-                    href="https://discord.gg/p7nE5jWPFd"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    Discord
-                </a>
-                <a
-                    class="header-button"
-                    href="https://git.sfymmik.xyz/Lings/Lings_Site"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    Source
-                </a>
-            </div>
+          <a
+            class="header-button"
+            href="https://git.sfymmik.xyz/Lings/Lings_Site"
+            target="_blank"
+            rel="noreferrer"
+          >Source</a>
         </div>
+      </div>
     </header>
+    <!-- main part of the site here -->
+     <main>
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">OPEN SOURCE COLLECTIVE</p>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="container hero-inner">
-                <p class="eyebrow">OPEN SOURCE ORGANIZATION</p>
+            <h1>
+              Building systems, tools, and experiments
+              <span>with taste.</span>
+            </h1>
 
-                <h1>Lings builds open projects for learning, collaboration, and experimentation.</h1>
+            <p class="hero-text">
+              Lings is a collective of teenage developers creating Linux-related projects,
+              websites, tools, and experimental software. We build real things together,
+              learn by doing, and care about both the code and the experience around it.
+            </p>
 
-                <p class="hero-text">
-                    Lings is a small collective of teenage developers working on Linux-related projects,
-                    websites, tools, and experiments. We build real things together and treat projects
-                    as a way to learn by doing.
-                </p>
-
-                <div class="hero-actions">
-                    <a class="button primary" href="#projects">View Projects</a>
-                    <a class="button secondary" href="#join">How to Contribute</a>
-                </div>
-
-                <div class="hero-meta">
-                    <span class="meta-badge">Linux</span>
-                    <span class="meta-badge">OSDev</span>
-                    <span class="meta-badge">Web</span>
-                    <span class="meta-badge">Open Source</span>
-                    <span class="meta-badge">Teen Developers</span>
-                </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">Explore Projects</a>
+              <a class="button secondary" href="#join">Join Lings</a>
             </div>
-        </section>
 
-        <section id="about" class="section">
-            <div class="container narrow">
-                <div class="section-heading">
-                    <p class="section-label">ABOUT</p>
-                    <h2>What Lings is</h2>
-                </div>
-
-                <div class="panel">
-                    <p>
-                        Lings started as a small group of teenage programmers who liked making things together.
-                        Over time, that became a shared space for building projects, exchanging ideas,
-                        improving skills, and learning through real work.
-                    </p>
-
-                    <p>
-                        We work on websites, Linux-related projects, tools, experiments, and system-level ideas.
-                        Some projects are practical, some are exploratory, and some exist because they were simply
-                        too interesting not to try.
-                    </p>
-
-                    <p>
-                        The goal is not to look polished for its own sake. The goal is to keep building,
-                        keep learning, and create things together.
-                    </p>
-                </div>
+            <div class="hero-tags">
+              <span>Linux</span>
+              <span>OSDev</span>
+              <span>Web</span>
+              <span>Open Source</span>
+              <span>Teen Developers</span>
             </div>
-        </section>
+          </div>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-label">PROJECTS</p>
-                    <h2>Current work</h2>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-panel hero-panel-main">
+              <div class="panel-topbar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="terminal-lines">
+                <div><span class="line-accent">$</span> initialize collective</div>
+                <div><span class="line-accent">$</span> build real projects</div>
+                <div><span class="line-accent">$</span> learn by shipping</div>
+                <div><span class="line-muted">status: active</span></div>
+              </div>
+            </div>
+            <div class="hero-floating-card floating-a">
+              <p class="floating-label">CURRENT FOCUS</p>
+              <strong>Lings Linux</strong>
+              <span>Arch-based Linux Distribution</span>
+            </div>
+            <div class="hero-floating-card floating-b">
+              <p class="floating-label">COLLECTIVE</p>
+              <strong>5 contributors</strong>
+              <!-- this piece of code here with the countries is not alphabetical, it depends on the majority of the contributors nationality :) -->
+              <span>Poland &bullet; Belgium &bullet; Greece</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats-strip">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <span class="start-label">Collective</span>
+            <strong>Open-source teenage developers</strong>
+          </div>
+          <div class="stat-card">
+            <span class="start-label">Focus</span>
+            <strong>Linux, BSD, web, tooling, experiments</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Approach</span>
+            <strong>Learn by building real things</strong>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <div class="container split-section">
+          <div class="section-intro">
+            <p class="section-label">ABOUT</p>
+            <h2>More than a group chat. Less than a company. Exactly what it needs to be.</h2>
+          </div>
+          <div class="glass-card prose-card">
+            <p>
+              Lings started as a small group of teenage programmers who liked building things together.
+              Over time, it became a shared space for collaboration, experimentation, and learning
+              through real work instead of empty theory.
+            </p>
+            <p>
+              We work on Linux-related projects, websites, utilities, system-level ideas, and weird
+              experiments that feel too interesting not to pursue. Some projects are practical,
+              some are exploratory, and some exist simply because we wanted to see if we could do them.
+            </p>
+            <p>
+              The point is not polish for its own sake. The point is momentum, curiosity, and
+              making things that actually exist.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="section-label">PROJECTS</p>
+              <h2>Current work and future direction</h2>
+            </div>
+            <p class="section-support">
+              Projects are where the collective becomes real - not just an idea, but code,
+              systems, interfaces, and experiments that can actually be used, tested, and improved.
+            </p>
+          </div>
+          <div class="projects-layout">
+            <article class="project-card featured-project">
+              <div class="project-header">
+                <div>
+                  <p class="mini-label">FEATURED PROJECT</p>
+                  <h3>Lings Linux</h3>
                 </div>
-
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-head">
-                            <h3>Lings Linux</h3>
-                            <span class="repo-tag">Linux Distribution</span>
+                <span class="project-tag active">Active</span>
+              </div>
+              <p class="project-description">
+                An Arch Linux-based distribution developed by the Lings team, focused on experimentation,
+                customization, branding, and learning through the process of building a real system.
+              </p>
+              <div class="project-points">
+                            <div class="point">
+                                <span class="point-title">System work</span>
+                                <p>Kernel-related customization, configuration, and distribution-level iteration.</p>
+                            </div>
+                            <div class="point">
+                                <span class="point-title">Identity</span>
+                                <p>A project built with a strong visual and technical identity across the experience.</p>
+                            </div>
+                            <div class="point">
+                                <span class="point-title">Learning</span>
+                                <p>Both practical and educational - a way to ship while understanding the stack deeper.</p>
+                            </div>
                         </div>
-
-                        <p>
-                            An Arch Linux-based distribution created by the Lings development team,
-                            focused on experimentation, customization, branding, and learning through
-                            building a real system.
-                        </p>
-
-                        <ul class="project-features">
-                            <li>Custom kernel-related work and configuration</li>
-                            <li>Lings identity across the system experience</li>
-                            <li>Built as both a practical and educational project</li>
-                        </ul>
 
                         <a
                             class="project-link"
@@ -158,154 +215,189 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            View repository →
+                            View repository
                         </a>
                     </article>
-
-                    <article class="project-card">
-                        <div class="project-head">
-                            <h3>Future Projects</h3>
-                            <span class="repo-tag repo-tag-muted">Planned</span>
+                    <article class="project-card project-side-card">
+                        <div class="project-header">
+                            <div>
+                                <p class="mini-label">EXPANSION</p>
+                                <h3>Future Projects</h3>
+                            </div>
+                            <span class="project-tag muted">Planned</span>
                         </div>
 
-                        <p>
-                            Lings is intended to grow over time. This includes websites, software tools,
-                            experiments, OSDev work, utilities, and other collaborative projects created
-                            by members of the organization.
+                        <p class="project-description">
+                            Lings is intended to grow over time into more collaborative work across software,
+                            websites, tools, experiments, utilities, and low-level development.
                         </p>
 
-                        <div class="project-placeholder-lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="future-tags">
+                            <span>Web</span>
+                            <span>Utilities</span>
+                            <span>OSDev</span>
+                            <span>Tools</span>
+                            <span>Experiments</span>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
-
         <section id="contributors" class="section">
             <div class="container">
                 <div class="section-heading">
-                    <p class="section-label">CONTRIBUTORS</p>
-                    <h2>Contributors</h2>
+                    <p class="section-label">TEAM</p>
+                    <h2>The people behind Lings</h2>
                 </div>
-
                 <div class="contributors-grid">
-                    <article class="contributor-card" id="sfymmik">
-                        <img src="https://sfymmik.xyz/images/pfp.jpg" alt="SfymmiK profile picture" />
-                        <div class="contributor-content">
-                            <div class="contributor-header">
-                                <h3><a href="https://sfymmik.xyz/" target="_blank" rel="noreferrer">SfymmiK</a></h3>
-                                <span class="role">Owner</span>
+                    <article class="team-card" id="sfymmik">
+                        <div class="team-top">
+                            <img src="https://sfymmik.xyz/images/pfp.jpg" alt="SfymmiK profile picture" />
+                            <div>
+                                <div class="team-header">
+                                    <h3><a href="https://sfymmik.xyz/" target="_blank" rel="noreferrer">SfymmiK</a></h3>
+                                    <span class="role">Owner</span>
+                                </div>
+                                <p class="team-focus">Lings Linux Developer · Lings Web Developer</p>
                             </div>
-                            <p><strong>Languages:</strong> C · Java · HTML/CSS</p>
-                            <p><strong>Location:</strong> Poland, Upper Silesia</p>
-                            <p><strong>Focus:</strong> Lings Linux Developer, Lings Web Developer</p>
+                        </div>
+
+                        <div class="team-meta">
+                            <p><strong>Languages</strong><span>C · Java · HTML/CSS</span></p>
+                            <p><strong>Location</strong><span>Poland, Żory</span></p>
                         </div>
                     </article>
-
-                    <article class="contributor-card" id="scryv">
-                        <img src="images/scryv.jpg" alt="Scryv profile picture" />
-                        <div class="contributor-content">
-                            <div class="contributor-header">
-                                <h3><a href="https://sdgscryv.xyz/" target="_blank" rel="noreferrer">Scryv</a></h3>
-                                <span class="role">Owner</span>
+                    <article class="team-card" id="scryv">
+                        <div class="team-top">
+                            <img src="images/scryv.jpg" alt="Scryv profile picture" />
+                            <div>
+                                <div class="team-header">
+                                    <h3><a href="https://sdgscryv.xyz/" target="_blank" rel="noreferrer">Scryv</a></h3>
+                                    <span class="role">Owner</span>
+                                </div>
+                                <p class="team-focus">Lings Linux Developer</p>
                             </div>
-                            <p><strong>Languages:</strong> C · Bash · HTML/CSS · Go</p>
-                            <p><strong>Location:</strong> Belgium</p>
-                            <p><strong>Focus:</strong> Lings Linux Developer</p>
+                        </div>
+                        <div class="team-meta">
+                            <p><strong>Languages</strong><span>C · Bash · HTML/CSS · Go</span></p>
+                            <p><strong>Location</strong><span>Belgium</span></p>
                         </div>
                     </article>
-
-                    <article class="contributor-card" id="kemf">
-                        <img src="images/kemf.jpg" alt="kemf profile picture" />
-                        <div class="contributor-content">
-                            <div class="contributor-header">
-                                <h3><a href="https://github.com/kemfo4" target="_blank" rel="noreferrer">kemf</a></h3>
-                                <span class="role">Owner</span>
+                    <article class="team-card" id="kemf">
+                        <div class="team-top">
+                            <img src="images/kemf.jpg" alt="kemf profile picture" />
+                            <div>
+                                <div class="team-header">
+                                    <h3><a href="https://github.com/kemfo4" target="_blank" rel="noreferrer">kemf</a></h3>
+                                    <span class="role">Owner</span>
+                                </div>
+                                <p class="team-focus">Lings Linux Developer</p>
                             </div>
-                            <p><strong>Languages:</strong> C++ · React · PHP · HTML/CSS</p>
-                            <p><strong>Location:</strong> Poland, Pomerania</p>
-                            <p><strong>Focus:</strong> Lings Linux Developer</p>
+                        </div>
+                        <div class="team-meta">
+                            <p><strong>Languages</strong><span>C++ · React · PHP · HTML/CSS</span></p>
+                            <p><strong>Location</strong><span>Poland, Gdynia</span></p>
                         </div>
                     </article>
-
-                    <article class="contributor-card" id="michael">
-                        <img src="images/michael.jpg" alt="michal7002 profile picture" />
-                        <div class="contributor-content">
-                            <div class="contributor-header">
-                                <h3>michal7002</h3>
-                                <span class="role">Contributor</span>
+                    <article class="team-card" id="taterr">
+                        <div class="team-top">
+                            <img src="images/taterr.jpg" alt="taterr profile picture" /> <!-- taterr hasn't provided his profile picture yet, so only a pleaceholder is there. -->
+                            <div>
+                                <div class="team-header">
+                                    <h3><a href="https://git.sfymmik.xyz/taterr" target="_blank" rel="noreferrer">Taterr</a></h3>
+                                    <span class="role">Contributor</span>
+                                </div>
+                                <p class="team-focus">Lings Linux Developer</p>
                             </div>
-                            <p><strong>Languages:</strong> C++ · HTML/CSS</p>
-                            <p><strong>Location:</strong> Poland, Pomerania</p>
-                            <p><strong>Focus:</strong> Lings Web Developer</p>
+                        </div>
+                        <div class="team-meta">
+                            <p><strong>Languages</strong><span>C/C++ · Assembly</span></p>
+                            <p><strong>Location</strong><span>Greece, Athens</span></p>
+                        </div>
+                    </article>
+                    <article class="team-card" id="michael">
+                        <div class="team-top">
+                            <img src="images/michael.jpg" alt="michal7002 profile picture" />
+                            <div>
+                                <div class="team-header">
+                                    <h3>michal7002</h3>
+                                    <span class="role role-muted">Contributor</span>
+                                </div>
+                                <p class="team-focus">Lings Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="team-meta">
+                            <p><strong>Languages</strong><span>C++ · HTML/CSS</span></p>
+                            <p><strong>Location</strong><span>Poland, Gdynia</span></p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
-
         <section id="join" class="section">
-            <div class="container narrow">
-                <div class="section-heading">
-                    <p class="section-label">CONTRIBUTING</p>
-                    <h2>How to join</h2>
+            <div class="container join-layout">
+                <div class="join-copy">
+                    <p class="section-label">JOIN LINGS</p>
+                    <h2>We want people who like making real things.</h2>
+                    <p class="join-text">
+                        You do not need to be perfect. You do need curiosity, consistency,
+                        and the ability to work with other people on shared projects.
+                    </p>
+                    <p class="join-contact">
+                        Join the
+                        <a href="https://discord.gg/p7nE5jWPFd" target="_blank" rel="noreferrer">Discord server</a>
+                        and talk to a contributor such as SfymmiK if you want to get involved.
+                    </p>
                 </div>
-
-                <div class="panel">
+                <div class="join-panel">
                     <div class="requirements-grid">
                         <div class="requirement-card">
                             <h3>English</h3>
                             <p>At least B1 level for technical conversation and collaboration.</p>
                         </div>
-
                         <div class="requirement-card">
                             <h3>Age</h3>
                             <p>Ideally 13 years old or older.</p>
                         </div>
-
                         <div class="requirement-card">
                             <h3>Programming</h3>
                             <p>Above-basic knowledge of at least one programming language.</p>
                         </div>
-
                         <div class="requirement-card">
                             <h3>Teamwork</h3>
-                            <p>Ability to work with others and communicate in group projects.</p>
+                            <p>Ability to communicate and work with others on shared projects.</p>
                         </div>
-
                         <div class="requirement-card">
                             <h3>Git</h3>
                             <p>Know Git already, or be willing to learn it while contributing.</p>
                         </div>
-
                         <div class="requirement-card">
                             <h3>Activity</h3>
-                            <p>Stay somewhat active in discussions, development, or project work.</p>
+                            <p>Stay somewhat active in development, discussion, or project work.</p>
                         </div>
                     </div>
-
-                    <p class="join-contact">
-                        For further questions, join our
-                        <a href="https://discord.gg/p7nE5jWPFd" target="_blank" rel="noreferrer">Discord server</a>
-                        and message a contributor such as SfymmiK.
-                    </p>
                 </div>
             </div>
         </section>
-
         <section id="credits" class="section section-last">
-            <div class="container narrow">
-                <div class="section-heading">
-                    <p class="section-label">CREDITS</p>
-                    <h2>Credits</h2>
-                </div>
-
-                <div class="panel credits-panel">
-                    <p><a href="#sfymmik">SfymmiK</a> — for providing hosting and sub-domain for this project's website alongside the necessary server for the project's version control.</p>
-                    <p><a href="#scryv">Scryv</a> — for the design and creation of the Lings logo, alongside being the main contributor to <a href="https://git.sfymmik.xyz/Lings/LingsOS">Lings Linux</a></p>
+            <div class="container">
+                <div class="footer-card">
+                    <div class="footer-brand">
+                        <h2>Lings</h2>
+                        <p>Open-source teenage developer collective building systems, tools, websites, and experiments.</p>
+                    </div>
+                    <div class="footer-columns">
+                        <div>
+                            <h3>Credits</h3>
+                            <p><a href="#sfymmik">SfymmiK</a> — hosting, sub-domain, and version control infrastructure.</p>
+                            <p><a href="#scryv">Scryv</a> — logo design and major contribution to <a href="https://git.sfymmik.xyz/Lings/LingsOS" target="_blank" rel="noreferrer">Lings Linux</a>.</p>
+                        </div>
+                        <div>
+                            <h3>Links</h3>
+                            <p><a href="https://discord.gg/p7nE5jWPFd" target="_blank" rel="noreferrer">Discord</a></p>
+                            <p><a href="https://git.sfymmik.xyz/Lings/Lings_Site" target="_blank" rel="noreferrer">Source</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
